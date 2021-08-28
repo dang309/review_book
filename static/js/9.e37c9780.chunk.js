@@ -1,2 +1,0 @@
-(this.webpackJsonpfe=this.webpackJsonpfe||[]).push([[9],{435:function(e,t,a){"use strict";a.r(t),a.d(t,"default",(function(){return o}));var n=a(38),c=(a(0),a(160)),s=a(187),r=Object(s.a)({header:{id:"".concat("app.containers.NotFoundPage",".header"),defaultMessage:"This is the NotFoundPage container!"}}),i=a(3);function o(){return Object(i.jsx)("h1",{children:Object(i.jsx)(c.a,Object(n.a)({},r.header))})}}}]);
-//# sourceMappingURL=9.e37c9780.chunk.js.map

@@ -11,7 +11,6 @@ import React, { createContext } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from './pages/HomePage/Loadable';
-import NotFoundPage from './pages/NotFoundPage/Loadable';
 import BookDetail from './pages/BookDetail/Loadable';
 
 import { useTheme } from '@material-ui/core/styles';
@@ -28,7 +27,6 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/book" component={BookDetail} />
-        <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
     </DeviceContext.Provider>

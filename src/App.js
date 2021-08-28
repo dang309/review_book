@@ -8,7 +8,7 @@
  */
 
 import React, { createContext } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 import HomePage from './pages/HomePage/Loadable';
 import BookDetail from './pages/BookDetail/Loadable';
@@ -24,10 +24,10 @@ export default function App() {
   const isMobile = useMediaQuery(useTheme().breakpoints.down('sm'));
   return (
     <DeviceContext.Provider value={isMobile}>
-      <Switch>
+      <HashRouter>
         <Route exact path="/" component={HomePage} />
         <Route path="/book" component={BookDetail} />
-      </Switch>
+      </HashRouter>
       <GlobalStyle />
     </DeviceContext.Provider>
   );

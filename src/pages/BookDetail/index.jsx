@@ -14,7 +14,6 @@ import ReviewContainer from '../../container/ReviewContainer';
 import AppBar from '@material-ui/core/AppBar';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getBookById } from '../../reducers/bookSlice';
 import { useLocation, useHistory } from 'react-router-dom';
 
 import BookDetailStyle from './BookDetail.style';
@@ -44,7 +43,6 @@ export default function HomePage() {
 
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
-    dispatch(getBookById(searchParams.get('id')));
     dispatch(
       getReviewByBookId({ book_id: searchParams.get('id'), page: activePage }),
     );

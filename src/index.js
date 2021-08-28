@@ -15,7 +15,7 @@ TimeAgo.addLocale(vn);
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="review_book">
         <App />
       </BrowserRouter>
     </Provider>
